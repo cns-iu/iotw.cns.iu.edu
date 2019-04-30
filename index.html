@@ -513,6 +513,36 @@ template {
       .more-info-icon:hover {
         fill: #66a1c1;
       }
+
+      .card {
+        display: inline-block;
+        width: 100%;
+        max-width: 600px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 4px rgba(0,0,7,0.3);
+      }
+
+      a:hover .card {
+        box-shadow: 2px 2px 8px rgba(0,0,7,0.6);
+      }
+      .card-header {
+        margin:0;
+        padding: 0;
+        line-height: 0;
+      }
+
+      .card-header .card-image {
+        border-bottom: 2px solid #000007;
+      }
+
+      .card-header .card-image img {
+        width: 100%; 
+      }
+
+      .card-body {
+        padding: 1rem;
+      }
+
       @media screen and (min-width: 480px) {
         .logo-list-item {
           padding: 1.5rem;
@@ -701,17 +731,40 @@ template {
         </div>
       </div>
       <main>
-        <section class="" id="dates">
+          <section class="" id="goals">
+              <h2>Goals</h2>
+              <p>The Indiana University School of Informatics, Computing, and Engineering&mdash;in close collaboration with Innovate Indiana, the IU Research and Technology Corp., The Mill and the Indiana IoT Lab&mdash;will host academic and industrial experts to discuss wearables and the Internet of Things (IoT) on April 25-26, 2019.</p>
+              <p>The symposium will bring together thought leaders and innovative product developers that design IoT wearables for fashion, athletics, medical, and military applications. Topics to be addressed include novel sensors and actuators, scalable and secure cyberinfrastructures, ownership of generated data, fashion trends in wearables, visual analytics of IoT data, and more.</p>
+              <p class="m-b-3"><span class="star">&#x2605;</span> <u>Keynote talks and evening events are open to the public</u>. Experts and practitioners from academia, industry, government, defense, retail, the arts, and other sectors are welcome.</p>
+              <!--<a href="https://www.eventbrite.com/e/iot-wearables-conference-tickets-55650333646?utm_source=eb_email&utm_medium=email&utm_campaign=new_event_email&utm_term=viewmyevent_button" class="btn">Register Now!</a>-->
+            </section>
+        <section id="show-highlights">
+          <h2>Photos and Presentations</h2>
+          <a href="https://photos.app.goo.gl/AHZcVaggiUWKktMS6" title="Photos of various event sessions">
+          <div class="card m-b-3">
+            <div class="card-header">
+              <div class="card-image">
+                <img src="img/img-event-gallery.jpg" alt="Image of Jason Pennington presentation">
+              </div>
+            </div>
+            <div class="card-body">
+              Event Photos
+            </div>
+          </div>
+          </a>
+          <h3>Download Presentations</h3>
+          <ul class="style-list-none agenda-list">
+            <li class="row"><a href="slides/2019-IoT-Welcome.pptx" title="Powerpoint slides for event Welcome">Welcome by Organizers</a> (10MBs)</li>
+            <li class="row"><a href="slides/Connelly_IoT-Wearable_apr2019.pdf" title="Presentation by Kay Connelly, Associate Dean for Research, IU, SICE" target="_blank">Kay Connelly's Presentation</a> (10MBs)</li>
+            <li class="row"><a href="slides/IURTC-IoT-Hudson_Parker.pptx" title="Presentation by Florence Hudson and Mitch Parker, Center for Applied Cybersecurity Research and IU Health">Florence Hudson and Mitch Parker, "Protecting Health Wearables from Cyber Attack"</a> (25MBs)</li>
+            <li class="row"><a href="slides/Bo_Choi_iol_wearable_motion.pdf" title="Presentation by Bo Choi, IU" target="_blank">Bo Choi, "Fashion Trends and Collaboration with Art & Design and Wearable Technology"</a> (42MBs)</li>
+          </ul>
+        </section>
+        <!--<section class="" id="dates">
             <h2>Dates</h2>
             <p>April 25-26, 2019</p>
-        </section>
-        <section class="" id="goals">
-          <h2>Goals</h2>
-          <p>The Indiana University School of Informatics, Computing, and Engineering&mdash;in close collaboration with Innovate Indiana, the IU Research and Technology Corp., The Mill and the Indiana IoT Lab&mdash;will host academic and industrial experts to discuss wearables and the Internet of Things (IoT) on April 25-26, 2019.</p>
-          <p>The symposium will bring together thought leaders and innovative product developers that design IoT wearables for fashion, athletics, medical, and military applications. Topics to be addressed include novel sensors and actuators, scalable and secure cyberinfrastructures, ownership of generated data, fashion trends in wearables, visual analytics of IoT data, and more.</p>
-          <p class="m-b-3"><span class="star">&#x2605;</span> <u>Keynote talks and evening events are open to the public</u>. Experts and practitioners from academia, industry, government, defense, retail, the arts, and other sectors are welcome.</p>
-          <a href="https://www.eventbrite.com/e/iot-wearables-conference-tickets-55650333646?utm_source=eb_email&utm_medium=email&utm_campaign=new_event_email&utm_term=viewmyevent_button" class="btn">Register Now!</a>
-        </section>
+        </section>-->
+        
         <section class="" id="locations">
           <h2>Locations</h2>
           <p class="m-b-3">Login to Zoom Meeting: <a href="" title="Zoom meeting link for Webinar 529513973">https://iu.zoom.us/s/529513973</a>. Dial: 646.558.8656.</p>
