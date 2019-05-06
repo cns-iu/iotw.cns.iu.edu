@@ -516,6 +516,8 @@ template {
 
       .card {
         display: inline-block;
+        margin-left: 5px;
+        margin-right: 5px;
         width: 100%;
         max-width: 600px;
         border-radius: 8px;
@@ -523,8 +525,29 @@ template {
       }
 
       a:hover .card {
-        box-shadow: 2px 2px 8px rgba(0,0,7,0.6);
+        box-shadow: 2px 2px 10px rgba(0,0,7,0.6);
       }
+
+      .video-container .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background-image: url(img/play-circle.svg);
+        background-position: center center;
+        background-size: 15%;
+        background-repeat: no-repeat;
+        opacity: .7;
+        transition: opacity .5s;
+      }
+
+      a:hover .image-overlay {
+        opacity: 1;
+        transition: opacity .5s;
+      }
+
       .card-header {
         margin:0;
         padding: 0;
@@ -532,11 +555,14 @@ template {
       }
 
       .card-header .card-image {
+        position: relative;
         border-bottom: 2px solid #000007;
       }
 
       .card-header .card-image img {
-        width: 100%; 
+        position: relative;
+        width: 100%;
+        z-index: 1;
       }
 
       .card-body {
@@ -752,6 +778,19 @@ template {
             </div>
           </div>
           </a>
+          <a href="https://www.youtube.com/watch?v=cVadNarWe3s&feature=youtu.be" title="Video of IoTW opens in a new tab." class="video-container" target="_blank">
+            <div class="card m-b-3">
+              <div class="card-header">
+                <div class="card-image">
+                  <img src="img/img-event-video.jpg" alt="Portrait of speakers">
+                  <div class="image-overlay"></div>
+                </div>
+              </div>
+              <div class="card-body">
+                Event Video
+              </div>
+            </div>
+            </a>
           <h3>Download Presentations</h3>
           <ul class="style-list-none agenda-list">
             <li class="row"><a href="slides/2019-IoT-Welcome.pptx" title="Powerpoint slides for event Welcome">Welcome by Organizers</a> (10MBs)</li>
